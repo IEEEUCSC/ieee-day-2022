@@ -39,7 +39,7 @@
 
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/common.css?ver=1.21">
-    <link rel="stylesheet" href="./assets/css/main.min.css?ver=1.22">
+    <link rel="stylesheet" href="./assets/css/main.min.css?ver=1.23">
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -1378,6 +1378,7 @@
                         if (response['status'] == 200) {
                             alertUser("success", response['desc']);
                             setTimeout(function () {
+                                $('.registrationDiv .closeBtn').click();
                                 // history.go(-1);
                                 // window.close();
                                 // window.location.replace("./training_categories");

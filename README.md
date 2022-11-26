@@ -1,5 +1,5 @@
 # IEEE Day 2022
-[saliya.ml/ieeeday/](https://saliya.ml/ieeeday/)
+<!-- [saliya.ml/ieeeday/](https://saliya.ml/ieeeday/) -->
 
 ### TODO
 

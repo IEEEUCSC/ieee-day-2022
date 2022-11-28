@@ -2188,6 +2188,10 @@ footer .footerInner .flexCont>div:nth-child(1) {
         min-width: 70%;
     }
 
+    .heroContainer {
+        pointer-events: all;
+    }
+
     .heroContainer .countDownCard .countTitle {
         font-size: 1.6em;
     }

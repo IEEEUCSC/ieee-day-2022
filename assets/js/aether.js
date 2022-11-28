@@ -255,9 +255,9 @@ console.log("Time: " + Math.round(di * 1000) / 1000 + "s, estimated speed: " + M
 
 let ghz = Math.round(spd * 1000) / 1000;
 // ghz = 4;
-let particleCountCalc = ghz * 100;
+let particleCountCalc = ghz * 30;
 let particleCountCeil = 1000;
-let particleCountFloor = 200;
+let particleCountFloor = 120;
 
 particleCountCalc = Math.round(Math.min(Math.max(particleCountCalc, particleCountFloor), particleCountCeil));
 

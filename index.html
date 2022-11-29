@@ -1378,8 +1378,8 @@
 
             $(document).on("click", ".registerBtn button", function () {
                 let now = new Date().getTime();
-                if (now < endDate) {
-                    alertUser("warning", "Registration will be opening soon")
+                if (now > endDate) {
+                    alertUser("warning", "Registrations are closed");
                     return;
                 }
 

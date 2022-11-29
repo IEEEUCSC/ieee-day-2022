@@ -440,7 +440,7 @@ header .headerCol .logoImg {
 .registrationDiv .title span {
     color: transparent;
     -webkit-text-stroke: 2.5px #FFFFFF;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .registrationDiv form.registrationForm {

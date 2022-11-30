@@ -118,7 +118,7 @@
         </div>
     </div>
 
-    <div class="floatingHeader mainHeaderDiv" aria-hidden="true">
+    <div class="floatingHeader mainHeaderDiv hideScrollbar" aria-hidden="true">
 
         <div class="closeBtn">
             X
@@ -683,7 +683,7 @@
     </section> -->
 
 
-<!--   
+    <!--   
 
     <section class="madhackIntro awards sponsors" id="sectionSponsors">
         <h1 class="m-auto boxedH1 aboveProgess mb-2">Sponsors</h1>
@@ -1188,7 +1188,7 @@
                     //     console.log("loaded " + script);
                     // });
                 });
-                
+
             }
 
         });
@@ -1341,7 +1341,7 @@
 
             // document on click floatingHeader
             $(document).on("click", ".floatingHeaderBtn .btnNoHover", function () {
-                $('.closeBtn').click()
+                $('.registrationDiv .closeBtn').click()
 
                 var index = $(this).index();
 
@@ -1393,6 +1393,13 @@
             // });
 
             $(document).on("click", ".closeBtn", function () {
+
+                // close the floating header 
+                if ($(this).closest(".floatingHeader").hasClass("mainHeaderDiv")) {
+                    $(".floatingHeaderBtn .btnNoHover.closeMenu").click();
+                    return;
+                }
+
                 TweenMax.to($(this).closest(".floatingHeader"), 0.7, {
                     display: "none",
                     opacity: 0,

@@ -1753,7 +1753,9 @@ section.awards .awardsCont .awardItem:nth-child(2) .price {
 }
 
 section.awards .awardsCont .awardItem:nth-child(3) .price {
-    color: #cd7f32;
+    /* color: #cd7f32; */
+    color: #c0c0c0;
+
 }
 
 section.awards .awardsCont {

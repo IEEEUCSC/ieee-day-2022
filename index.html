@@ -1438,8 +1438,8 @@
             });
 
             $(document).on("click", ".registerBtn button", function () {
-                // alertUser("warning", "Registration limit reached. Sorry for the inconvenience.");
-                // return;
+                alertUser("warning", "Registration limit reached. Sorry for the inconvenience.");
+                return;
                 
                 let now = new Date().getTime();
                 if (now > endDate) {

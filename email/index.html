@@ -38,6 +38,7 @@
             flex: 1;
             height: 2px;
             background-color: #fff;
+            background-color: #e0e0e0;
             margin: 0 0.25rem;
             display: flex;
         }
@@ -51,21 +52,30 @@
             margin-left: -1rem;
             margin-right: -1rem;
         }
+
+
+        /* media for mobile0 */
+        @media only screen and (max-width: 600px) {
+            table {
+                width: 100% !important;
+            }
+        }
     </style>
 
-    <table style="FONT-FAMILY: 'Poppins', Arial, sans-serif; width: 420px;" cellspacing="0" cellpadding="0" border="0"
-        class="bg-img">
+    <table
+        style="FONT-FAMILY: 'Poppins', Arial, sans-serif; width: 550px; table-layout: fixed; vertical-align: top; min-width: 320px; Margin: 0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f3fcf7; max-width: 650px;"
+        cellspacing="0" cellpadding="0" border="0" class="bg-img">
         <tbody>
             <tr style="height: 50px;"> </tr>
             <tr class="full-width">
-                <td style="WIDTH: 420px; display: flex; align-items: center;">
+                <td style="WIDTH: 550px; display: flex; align-items: center; padding-left: 20px;">
 
                     <div class="bg-line bg-line-short"></div>
                     <div class="col-auto"><span
-                            style="FONT-FAMILY: 'Poppins', Arial, sans-serif; FONT-SIZE: 14pt;line-height: 13pt"><strong>{firstName}
+                            style="FONT-FAMILY: 'Poppins', Arial, sans-serif; FONT-SIZE: 16pt;line-height: 13pt"><strong>{firstName}
                                 {lastName}</strong></span>
                         <span
-                            style="FONT-FAMILY: 'Poppins', Arial, sans-serif; FONT-SIZE: 9pt; LINE-HEIGHT: 11pt; font-weight: 100;"><br>{title}</span>
+                            style="FONT-FAMILY: 'Poppins', Arial, sans-serif; FONT-SIZE: 8pt; LINE-HEIGHT: 11pt; font-weight: 100;"><br>{title}</span>
                     </div>
                     <div class="bg-line"></div>
 
@@ -77,6 +87,7 @@
                 .phone-bg img {
                     /* display: block; */
                     background: #FFFFFF;
+                    background-color: #e0e0e0;
                     border: 1px solid #120D32;
                     padding-top: 5px;
                     border-radius: 26px 26px 0 0;
@@ -96,21 +107,22 @@
                     <span style="FONT-SIZE: 9pt; ">
                         <a href="tel:+{telNo}" style="display: flex; align-items: center;">
                             <span class="phone-bg" style="width: 30px; text-align: right;">
-                                <img src="phone.png" alt="facebook icon" style="border:0; width:26px; height:26px"
-                                    width="26" height="26" border="0">
+                                <img src="https://ieeeday.ucscieee.com/email/phone.png" alt="facebook icon"
+                                    style="border:0; width:26px; height:26px" width="26" height="26" border="0">
                             </span>
                             <span style="FONT-SIZE: 9pt; padding-left: 10px">{phone}</span>
                         </a>
                     </span>
                 </td>
             </tr>
-            <tr>
-                <td style="FONT-SIZE: 9pt; padding-left: 20px; padding-bottom: 25px; line-height: 14pt; " colspan="2">
+            <tr style="padding-top: 0px; display: block;">
+                <td style="FONT-SIZE: 9pt; padding-top: 0px; padding-left: 20px; padding-bottom: 25px; line-height: 14pt; "
+                    colspan="2">
                     <span style="FONT-SIZE: 9pt; ">
                         <a href="mailto:{email}" style="display: flex; align-items: center;">
                             <span class="phone-bg phone-bg-inv" style="width: 30px; text-align: right;">
-                                <img src="email.png" alt="facebook icon" style="border:0; width:26px; height:26px"
-                                    width="26" height="26" border="0">
+                                <img src="https://ieeeday.ucscieee.com/email/email.png" alt="facebook icon"
+                                    style="border:0; width:26px; height:26px" width="26" height="26" border="0">
                             </span>
                             <span style="FONT-SIZE: 9pt; padding-left: 10px">{email}</span>
                         </a>

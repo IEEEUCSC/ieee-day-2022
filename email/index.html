@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>Email Signature</TITLE>
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+</head>
+
+<BODY style="font-size: 10pt; FONT-FAMILY: 'Poppins', Arial, sans-serif;">
+
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+
+        .bg-img {
+            background-image: url('Email Signature-alt.jpg');
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: 100% 100%;
+
+            color: #fff !important;
+            padding: 1rem;
+        }
+
+        .bg-img a {
+            color: #fff !important;
+            text-decoration: inherit;
+        }
+
+        .bg-line {
+            flex: 1;
+            height: 2px;
+            background-color: #fff;
+            margin: 0 0.25rem;
+            display: flex;
+        }
+
+        .bg-line.bg-line-short {
+            flex: 0.5;
+        }
+
+        .full-width {
+            display: block;
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+    </style>
+
+    <table style="FONT-FAMILY: 'Poppins', Arial, sans-serif; width: 420px;" cellspacing="0" cellpadding="0" border="0"
+        class="bg-img">
+        <tbody>
+            <tr style="height: 50px;"> </tr>
+            <tr class="full-width">
+                <td style="WIDTH: 420px; display: flex; align-items: center;">
+
+                    <div class="bg-line bg-line-short"></div>
+                    <div class="col-auto"><span
+                            style="FONT-FAMILY: 'Poppins', Arial, sans-serif; FONT-SIZE: 14pt;line-height: 13pt"><strong>{firstName}
+                                {lastName}</strong></span>
+                        <span
+                            style="FONT-FAMILY: 'Poppins', Arial, sans-serif; FONT-SIZE: 9pt; LINE-HEIGHT: 11pt; font-weight: 100;"><br>{title}</span>
+                    </div>
+                    <div class="bg-line"></div>
+
+
+                </td>
+            </tr>
+
+            <style>
+                .phone-bg img {
+                    /* display: block; */
+                    background: #FFFFFF;
+                    border: 1px solid #120D32;
+                    padding-top: 5px;
+                    border-radius: 26px 26px 0 0;
+                    /* width: 100%;
+                    height: 100%; */
+                }
+
+                .phone-bg-inv img {
+                    padding-top: 0;
+                    padding-bottom: 5px;
+                    border-radius: 0 0 26px 26px;
+                }
+            </style>
+
+            <tr>
+                <td style="padding-top: 25px; padding-left: 20px; FONT-SIZE: 9pt; line-height: 14pt; " colspan="2">
+                    <span style="FONT-SIZE: 9pt; ">
+                        <a href="tel:+{telNo}" style="display: flex; align-items: center;">
+                            <span class="phone-bg" style="width: 30px; text-align: right;">
+                                <img src="phone.png" alt="facebook icon" style="border:0; width:26px; height:26px"
+                                    width="26" height="26" border="0">
+                            </span>
+                            <span style="FONT-SIZE: 9pt; padding-left: 10px">{phone}</span>
+                        </a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="FONT-SIZE: 9pt; padding-left: 20px; padding-bottom: 25px; line-height: 14pt; " colspan="2">
+                    <span style="FONT-SIZE: 9pt; ">
+                        <a href="mailto:{email}" style="display: flex; align-items: center;">
+                            <span class="phone-bg phone-bg-inv" style="width: 30px; text-align: right;">
+                                <img src="email.png" alt="facebook icon" style="border:0; width:26px; height:26px"
+                                    width="26" height="26" border="0">
+                            </span>
+                            <span style="FONT-SIZE: 9pt; padding-left: 10px">{email}</span>
+                        </a>
+                    </span>
+                </td>
+            </tr>
+
+            <!-- <tr>
+                <td colspan="2" style="padding-top: 25px; FONT-SIZE: 9pt; line-height: 14pt;">
+                    <span style="FONT-SIZE: 9pt; "><strong>Email:</strong> <a href="mailto:{email}"
+                            style="text-decoration: none; "><span
+                                style="text-decoration: none; ">{email}</span></a><br></span>
+
+                    <span style="FONT-SIZE: 9pt;">
+                        <span style="FONT-SIZE: 9pt; "><strong>Mobile:</strong> {mobile}<span> |
+                            </span></span>
+                        <span style="FONT-SIZE: 9pt; "><strong>Phone:</strong> {phone}</span>
+                        <br>
+                    </span>
+
+                    <span style="FONT-SIZE: 9pt;">
+                        <strong>Address:</strong>
+                        <span style="">{company}<span>, </span></span>
+                        <span>{address1}<span>, </span></span>
+                        <span>{address2}</span>
+                        <br>
+                    </span>
+                </td>
+            </tr> -->
+
+
+        </tbody>
+    </table>
+
+
+</BODY>
+
+</HTML>

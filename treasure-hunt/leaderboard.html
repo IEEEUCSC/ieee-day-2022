@@ -434,15 +434,15 @@
                         for (var i = 0; i < data.length; i++) {
                             let solvedTime = formatDate(data[i]['solvedTime']);
                             // convert to sri lanka time +5.30
-                            // solvedTime.setHours(solvedTime.getHours() + 5);
-                            // solvedTime.setMinutes(solvedTime.getMinutes() + 30);
+                            solvedTime.setHours(solvedTime.getHours() + 5);
+                            solvedTime.setMinutes(solvedTime.getMinutes() + 30);
 
                             solvedTime = new Date(solvedTime).toLocaleString('en-US', {
                                 hour: 'numeric',
                                 minute: 'numeric',
                                 second: 'numeric',
                                 hour12: true,
-                                timeZone: 'Asia/Colombo'
+                                // timeZone: 'Asia/Colombo'
                             });
 
                             var $tr = $("<tr>");

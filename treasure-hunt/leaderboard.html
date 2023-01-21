@@ -175,6 +175,15 @@
                 font-size: 40vw;
             }
         }
+
+        /* media mobile */
+        @media (max-width: 768px) {
+            /* hide last col of table */
+            .leaderboard-table table tr td:nth-child(4),
+            .leaderboard-table table tr th:nth-child(4) {
+                display: none;
+            }
+        }
     </style>
 
 
@@ -348,6 +357,7 @@
                 @media (orientation: portrait) {
                     .leaderboard {
                         padding: 2rem;
+                        padding: 0rem;
                     }
 
                     .leaderboard-title {

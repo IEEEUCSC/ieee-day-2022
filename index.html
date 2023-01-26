@@ -1286,7 +1286,7 @@
         $(document).ready(function () {
 
 
-            var endDate = new formatDate("2023-01-22 09:00:00").getTime();
+            var endDate = new formatDate("2023-01-30 09:00:00").getTime();
 
             setInterval(function () {
                 let now = new Date().getTime();
@@ -1476,8 +1476,8 @@
             });
 
             $(document).on("click", ".registerBtn button", function () {
-                alertUser("warning", "Registration limit reached. Sorry for the inconvenience.");
-                return;
+                // alertUser("warning", "Registration limit reached. Sorry for the inconvenience.");
+                // return;
 
                 let now = new Date().getTime();
                 if (now > endDate) {
